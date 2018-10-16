@@ -6,17 +6,18 @@ const Nav = props => (
 
         <div id="mySidenav" className="sidenav">
             <a href="javascript:void(0)" className="closebtn" onClick={() => props.closeNav()}>&times;</a>
-            <h1>News.ly</h1>
+            <h1 className="brand">News.ly</h1>
             <a href="#">Scrape</a>
-            <a href="#">Saved</a>
+            <a href="#">Saved Articles</a>
             <a href="#">About</a>
             <a href="#">ReadMe</a>
         </div>
 
         <div className="window" id="main">
-            <h2>Sidenav Push Example</h2>
-            <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
-            <span id="nav-btn" onClick={() => props.openNav()}>&#9776; open</span>
+            <h1>Welcome to News.ly!</h1>
+            <p>Click the button below to begin scraping articles.</p>
+            <button>Scrape</button>
+            <div id="nav-btn" onClick={() => props.openNav()}><i className="fa fa-bars fa-2x"></i></div>
         </div>
 
 
