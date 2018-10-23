@@ -16,7 +16,7 @@ const Nav = props => (
         <div className="window" id="main">
             <h1>Welcome to News.ly!</h1>
             <p>Click the button below to begin scraping articles.</p>
-            <button>Scrape</button>
+            <button onClick={()=> props.scrape()}>Scrape</button>
             <div id="nav-btn" onClick={() => props.openNav()}><i className="fa fa-bars fa-2x"></i></div>
         </div>
 
